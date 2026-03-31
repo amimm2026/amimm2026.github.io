@@ -7,59 +7,100 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-<!-- Navigation -->
+<!-- ============================================================ NAVIGATION -->
 <nav id="navbar">
   <div class="nav-container">
-    <div class="nav-logo">AMI @ ACM MM 2026</div>
+    <div class="nav-logo"><span class="logo-ami">AMI</span> @ ACM MM 2026</div>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
+      <li><a href="#organizers">Organizers</a></li>
       <li><a href="#cfp">Call for Papers</a></li>
       <li><a href="#speakers">Speakers</a></li>
       <li><a href="#schedule">Schedule</a></li>
-      <li><a href="#organizers">Organizers</a></li>
     </ul>
     <button class="nav-toggle" id="navToggle">&#9776;</button>
   </div>
 </nav>
 
-<!-- Hero -->
+<!-- ============================================================ HERO -->
 <header class="hero">
-  <div class="hero-content">
-    <div class="hero-badge">ACM Multimedia 2026 Workshop</div>
-    <h1 class="hero-title">
-      The 1st International Workshop on<br/>
-      <span class="accent">Agentic Multimodal Intelligence</span>
-    </h1>
-    <p class="hero-subtitle">Models, Benchmarks, and Applications</p>
-    <div class="hero-meta">
-      <span class="meta-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-        July 2026
-      </span>
-      <span class="meta-divider">|</span>
-      <span class="meta-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        Rio de Janeiro, Brazil
-      </span>
-      <span class="meta-divider">|</span>
-      <span class="meta-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-        Hybrid Format
-      </span>
-    </div>
-    <div class="hero-actions">
-      <a href="#cfp" class="btn-primary">Call for Papers</a>
-      <a href="#about" class="btn-secondary">Learn More</a>
-    </div>
-  </div>
+  <!-- Rio de Janeiro background -->
+  <div class="hero-bg"></div>
   <div class="hero-overlay"></div>
+
+  <div class="hero-inner">
+
+    <!-- Left: title & actions -->
+    <div class="hero-left">
+      <div class="hero-badge">ACM Multimedia 2026 &nbsp;·&nbsp; Workshop</div>
+      <h1 class="hero-title">
+        The 1st Workshop on<br/>
+        <span class="accent">Agentic Multimodal<br/>Intelligence</span>
+      </h1>
+      <p class="hero-subtitle">Models, Benchmarks, and Applications</p>
+      <div class="hero-meta">
+        <span class="meta-chip">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          July 2026
+        </span>
+        <span class="meta-chip">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Rio de Janeiro, Brazil
+        </span>
+        <span class="meta-chip">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          Hybrid Format
+        </span>
+      </div>
+      <div class="hero-actions">
+        <a href="#cfp" class="btn-primary">Call for Papers</a>
+        <a href="#about" class="btn-secondary">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Right: Latest News -->
+    <div class="hero-news">
+      <div class="news-panel-title">Latest News</div>
+      <div class="news-list">
+        <div class="news-item">
+          <div class="news-dot"></div>
+          <div class="news-body">
+            <div class="news-date">Mar 2026</div>
+            <div class="news-text">The AMI Workshop has been officially accepted at ACM Multimedia 2026 in Rio de Janeiro!</div>
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-dot"></div>
+          <div class="news-body">
+            <div class="news-date">Coming Soon</div>
+            <div class="news-text">Paper submission portal will open shortly. Stay tuned for the official Call for Papers.</div>
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-dot"></div>
+          <div class="news-body">
+            <div class="news-date">Coming Soon</div>
+            <div class="news-text">Keynote speaker lineup confirmed — 4 world-leading researchers in multimodal AI and agentic systems.</div>
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-dot"></div>
+          <div class="news-body">
+            <div class="news-date">Coming Soon</div>
+            <div class="news-text">Important dates and paper submission deadlines will be announced. <a href="#cfp">View topics &rarr;</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </header>
 
-<!-- Important Dates -->
+<!-- ============================================================ IMPORTANT DATES -->
 <section class="dates-bar">
   <div class="container">
     <div class="dates-grid">
@@ -83,193 +124,254 @@
   </div>
 </section>
 
-<!-- About -->
+<!-- ============================================================ ABOUT -->
 <section id="about" class="section">
   <div class="container">
     <div class="section-header">
       <span class="section-tag">Overview</span>
       <h2 class="section-title">About the Workshop</h2>
     </div>
-    <div class="about-grid">
-      <div class="about-text">
-        <p>
-          Recent advances in multimodal foundation models—including large vision-language models and multimodal generative models—have significantly reshaped artificial intelligence by enabling unified perception, understanding, and generation across text, images, videos, audio, and other sensory modalities.
-        </p>
-        <p>
-          Beyond perception and generation, a growing body of research indicates that the next frontier of intelligence lies in <strong>agentic AI</strong>. Increasingly, multimodal foundation models are being deployed as agents: systems that can autonomously reason, plan, act, and adapt over time in interactive environments. This shift marks a fundamental transition from passive multimodal models to <strong>Agentic Multimodal Intelligence</strong>.
-        </p>
-        <p>
-          This workshop brings together researchers and practitioners across multimedia, vision, natural language processing, robotics, and human-computer interaction to advance agentic intelligence—fostering interdisciplinary discussion on models, data, benchmarks, and evaluation for next-generation intelligent agents.
-        </p>
-      </div>
-      <div class="about-questions">
-        <h3>Key Research Questions</h3>
-        <ul class="question-list">
-          <li>How can multimodal foundation models be endowed with agency, enabling autonomous decision-making rather than passive response generation?</li>
-          <li>How can agents effectively integrate perception, reasoning, memory, and action across heterogeneous modalities?</li>
-          <li>How can multimodal agents perform long-horizon planning and reasoning in dynamic and partially observable environments?</li>
-          <li>How can agents learn from interaction, feedback, and experience, rather than relying solely on static supervision?</li>
-          <li>How should we evaluate agentic multimodal intelligence, particularly in terms of robustness, safety, and long-term behavior?</li>
-        </ul>
+    <div class="about-text" style="max-width:820px;margin:0 auto 3rem;">
+      <p>
+        Recent advances in multimodal foundation models—including large vision-language models and multimodal generative models—have significantly reshaped artificial intelligence by enabling unified perception, understanding, and generation across text, images, videos, audio, and other sensory modalities. Beyond perception and generation, a growing body of research indicates that the next frontier of intelligence lies in <strong>agentic AI</strong>: systems that can autonomously reason, plan, act, and adapt over time in interactive environments. This shift marks a fundamental transition from passive multimodal models to <strong>Agentic Multimodal Intelligence (AMI)</strong>.
+      </p>
+      <p style="margin-bottom:0;">
+        This workshop brings together researchers and practitioners across multimedia, vision, natural language processing, robotics, and human-computer interaction to advance agentic intelligence—fostering interdisciplinary discussion on models, data, benchmarks, and evaluation for next-generation intelligent agents. We particularly encourage work that bridges multimodal learning, reinforcement learning, embodied AI, and human-in-the-loop systems toward building scalable, robust, and trustworthy agentic systems.
+      </p>
+    </div>
+
+    <!-- Research Topics -->
+    <div class="topics-compact">
+      <h3>Topics of Interest</h3>
+      <div class="topics-compact-grid">
+        <div class="topic-compact-card">Agentic Multimodal Intelligence &amp; Autonomous Decision-Making</div>
+        <div class="topic-compact-card">Vision-Language-Action Models</div>
+        <div class="topic-compact-card">Long-horizon Planning &amp; World Models</div>
+        <div class="topic-compact-card">Multimodal Reasoning, Planning, and Control</div>
+        <div class="topic-compact-card">Learning from Interaction &amp; Human Feedback</div>
+        <div class="topic-compact-card">Data, Benchmarks, and Evaluation Protocols</div>
+        <div class="topic-compact-card">Embodied AI &amp; Simulated Environments</div>
+        <div class="topic-compact-card">Trustworthy &amp; Responsible Multimodal Agents</div>
+        <div class="topic-compact-card">Continual &amp; Lifelong Learning for Agents</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Call for Papers -->
-<section id="cfp" class="section section-alt">
+<!-- ============================================================ ORGANIZERS (moved before CfP) -->
+<section id="organizers" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Team</span>
+      <h2 class="section-title">Organizers</h2>
+    </div>
+    <div class="organizers-grid">
+
+      <div class="organizer-card">
+        <div class="organizer-avatar"><img src="photo/qichen.jpg" alt="Qi Chen"/></div>
+        <div class="organizer-info">
+          <h3><a href="https://scholar.google.com/citations?user=OgKU77kAAAAJ&hl=en" class="organizer-name-link" target="_blank" rel="noopener">Qi Chen</a></h3>
+          <p class="organizer-affil">Adelaide University, Australia</p>
+          <a href="mailto:qi.chen04@adelaide.edu.au" class="organizer-email">qi.chen04@adelaide.edu.au</a>
+          <p class="organizer-bio">Postdoctoral research fellow at AIML, Adelaide University, working with Prof. Anton van den Hengel and A/Prof. Qi Wu. Research focuses on Multimodal Generative AI and Large Multimodal Models. 30+ publications in IEEE-TPAMI, CVPR, NeurIPS, ICCV.</p>
+        </div>
+      </div>
+
+      <div class="organizer-card">
+        <div class="organizer-avatar"><img src="photo/junyanwang.jpg" alt="Junyan Wang"/></div>
+        <div class="organizer-info">
+          <h3><a href="https://scholar.google.com/citations?user=5yS_tTUAAAAJ&hl=en" class="organizer-name-link" target="_blank" rel="noopener">Junyan Wang</a></h3>
+          <p class="organizer-affil">Adelaide University, Australia</p>
+          <a href="mailto:junyan.wang@adelaide.edu.au" class="organizer-email">junyan.wang@adelaide.edu.au</a>
+          <p class="organizer-bio">Postdoctoral research fellow at AIML, Adelaide University. Ph.D. from UNSW (2024). Research spans computer vision, video understanding, and generative AI. Publications include CVPR, ICLR, NeurIPS.</p>
+        </div>
+      </div>
+
+      <div class="organizer-card">
+        <div class="organizer-avatar"><img src="photo/yuankaiqi.png" alt="Yuankai Qi"/></div>
+        <div class="organizer-info">
+          <h3><a href="https://sites.google.com/site/yuankiqi/home" class="organizer-name-link" target="_blank" rel="noopener">Yuankai Qi</a></h3>
+          <p class="organizer-affil">Macquarie University, Australia</p>
+          <a href="mailto:qykshr@gmail.com" class="organizer-email">qykshr@gmail.com</a>
+          <p class="organizer-bio">Lecturer at Macquarie University and Adjunct Lecturer at AIML, Adelaide University. Ph.D. from Harbin Institute of Technology (2018). Research spans vision-language navigation, video captioning, image generation, and music generation.</p>
+        </div>
+      </div>
+
+      <div class="organizer-card">
+        <div class="organizer-avatar"><img src="photo/jiajundeng.jpeg" alt="Jiajun Deng"/></div>
+        <div class="organizer-info">
+          <h3><a href="https://scholar.google.com/citations?user=FAAHjxsAAAAJ&hl=en" class="organizer-name-link" target="_blank" rel="noopener">Jiajun Deng</a></h3>
+          <p class="organizer-affil">USTC, China</p>
+          <a href="mailto:dengjj@ustc.edu.cn" class="organizer-email">dengjj@ustc.edu.cn</a>
+          <p class="organizer-bio">Professor at USTC. Research interests in multimodal understanding, spatial intelligence, and embodied AI. 50+ papers in IEEE TPAMI, NeurIPS, CVPR, ICCV, ECCV. Area Chair at ACM Multimedia 2024 &amp; 2025.</p>
+        </div>
+      </div>
+
+      <div class="organizer-card">
+        <div class="organizer-avatar"><img src="photo/haoli.jpg" alt="Hao Li"/></div>
+        <div class="organizer-info">
+          <h3><a href="https://scholar.google.com/citations?user=pHN-QIwAAAAJ&hl=en" class="organizer-name-link" target="_blank" rel="noopener">Hao Li</a></h3>
+          <p class="organizer-affil">Fudan University, China</p>
+          <a href="mailto:lihao_lh@fudan.edu.cn" class="organizer-email">lihao_lh@fudan.edu.cn</a>
+          <p class="organizer-bio">Professor at Fudan University. Ph.D. from the University of Chinese Academy of Sciences. 100+ peer-reviewed articles and 20+ patents. Research interests include foundation models and video generation.</p>
+        </div>
+      </div>
+
+      <div class="organizer-card">
+        <div class="organizer-avatar"><img src="photo/mingkuitan.png" alt="Mingkui Tan"/></div>
+        <div class="organizer-info">
+          <h3><a href="https://tanmingkui.github.io/" class="organizer-name-link" target="_blank" rel="noopener">Mingkui Tan</a></h3>
+          <p class="organizer-affil">SCUT, China</p>
+          <a href="mailto:mingkuitan@scut.edu.cn" class="organizer-email">mingkuitan@scut.edu.cn</a>
+          <p class="organizer-bio">Professor at South China University of Technology. Ph.D. from Nanyang Technological University (2014). Research in machine learning, sparse analysis, deep learning, and large-scale optimization.</p>
+        </div>
+      </div>
+
+      <div class="organizer-card">
+        <div class="organizer-avatar"><img src="photo/houqiangli.jpg" alt="Houqiang Li"/></div>
+        <div class="organizer-info">
+          <h3><a href="http://staff.ustc.edu.cn/~lihq/en/" class="organizer-name-link" target="_blank" rel="noopener">Houqiang Li</a></h3>
+          <p class="organizer-affil">USTC, China</p>
+          <a href="mailto:lihq@ustc.edu.cn" class="organizer-email">lihq@ustc.edu.cn</a>
+          <p class="organizer-bio">Professor at USTC. IEEE Fellow (2021). 200+ papers in top-tier journals and conferences. Research interests include image/video coding, computer vision, and reinforcement learning. Associate Editor of IEEE TMM.</p>
+        </div>
+      </div>
+
+      <div class="organizer-card">
+        <div class="organizer-avatar"><img src="photo/xiaojunchang.jpg" alt="Xiaojun Chang"/></div>
+        <div class="organizer-info">
+          <h3><a href="https://ustc.fmclab.cn/author/xiaojun-chang/" class="organizer-name-link" target="_blank" rel="noopener">Xiaojun Chang</a></h3>
+          <p class="organizer-affil">USTC, China</p>
+          <a href="mailto:xjchang@ustc.edu.cn" class="organizer-email">xjchang@ustc.edu.cn</a>
+          <p class="organizer-bio">Professor at USTC and Visiting Professor at MBZUAI. ARC DECRA Fellow (2019–2021). Previously at CMU, Monash University, and RMIT. Research on machine learning for multimedia analysis and computer vision.</p>
+        </div>
+      </div>
+
+      <div class="organizer-card">
+        <div class="organizer-avatar"><img src="photo/qiwu.jpeg" alt="Qi Wu"/></div>
+        <div class="organizer-info">
+          <h3><a href="https://v3alab.github.io/" class="organizer-name-link" target="_blank" rel="noopener">Qi Wu</a></h3>
+          <p class="organizer-affil">Adelaide University, Australia</p>
+          <a href="mailto:qi.wu01@adelaide.edu.au" class="organizer-email">qi.wu01@adelaide.edu.au</a>
+          <p class="organizer-bio">Associate Professor at Adelaide University. Ph.D. from the University of Bath (2015). Research interests in Image Captioning, Visual Question Answering, and Vision-to-Language. State-of-the-art results in MS COCO Captioning Challenges.</p>
+        </div>
+      </div>
+
+      <div class="organizer-card">
+        <div class="organizer-avatar"><img src="photo/anton.jpeg" alt="Anton van den Hengel"/></div>
+        <div class="organizer-info">
+          <h3><a href="https://scholar.google.com/citations?user=nMGZ2ZQAAAAJ&hl=en" class="organizer-name-link" target="_blank" rel="noopener">Anton van den Hengel</a></h3>
+          <p class="organizer-affil">Adelaide University, Australia</p>
+          <a href="mailto:anton.vandenhengel@adelaide.edu.au" class="organizer-email">anton.vandenhengel@adelaide.edu.au</a>
+          <p class="organizer-bio">Chief Scientist at AIML and Director of the Centre for Augmented Reasoning, Adelaide University. Fellow of the Australian Academy of Technology and Engineering. Former Director of Applied Science at Amazon.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ CALL FOR PAPERS -->
+<section id="cfp" class="section">
   <div class="container">
     <div class="section-header">
       <span class="section-tag">Submissions</span>
       <h2 class="section-title">Call for Papers</h2>
     </div>
     <p class="cfp-intro">
-      We invite submissions of original research contributions related to, but not limited to, the following topics:
+      We invite submissions of original, unpublished research on topics related to agentic multimodal intelligence.
+      All accepted papers will be published in the ACM Digital Library as part of the ACM MM 2026 workshop proceedings.
     </p>
-    <div class="topics-grid">
 
-      <div class="topic-card">
-        <div class="topic-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
-        </div>
-        <h3>Agentic Multimodal Intelligence</h3>
+    <div class="cfp-requirements">
+
+      <div class="req-card">
+        <h4>Paper Format</h4>
         <ul>
-          <li>Multimodal agents and autonomous decision-making</li>
-          <li>Vision-Language-Action models</li>
-          <li>Tool-using and environment-interacting agents</li>
-          <li>Generative agents for decision-making and planning</li>
-          <li>Long-horizon task planning with multimodal inputs</li>
-          <li>Memory, state representation, and world models for agents</li>
+          <li>Use the official <strong>ACM MM 2026</strong> two-column template</li>
+          <li>Minimum <strong>4 pages</strong>, maximum <strong>8 pages</strong></li>
+          <li>Up to <strong>2 additional pages</strong> for references only</li>
+          <li>PDF format, submitted in English</li>
         </ul>
       </div>
 
-      <div class="topic-card">
-        <div class="topic-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-        </div>
-        <h3>Multimodal Reasoning, Planning, and Control</h3>
+      <div class="req-card">
+        <h4>Review Process</h4>
         <ul>
-          <li>Multimodal reasoning over time and events</li>
-          <li>Hierarchical planning and skill composition</li>
-          <li>Multimodal reinforcement learning and decision-making</li>
-          <li>Embodied and simulated interactive environments</li>
+          <li><strong>Double-blind</strong> peer review — submissions must be anonymized</li>
+          <li>Remove author names, affiliations, and acknowledgements</li>
+          <li>Avoid self-identifying citations where possible</li>
+          <li>Each paper reviewed by at least 3 program committee members</li>
         </ul>
       </div>
 
-      <div class="topic-card">
-        <div class="topic-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        </div>
-        <h3>Learning from Interaction and Feedback</h3>
+      <div class="req-card">
+        <h4>Submission Policy</h4>
         <ul>
-          <li>Online, continual, and lifelong learning for multimodal agents</li>
-          <li>Learning from human feedback and preferences</li>
-          <li>Self-reflection, self-improvement, and adaptation</li>
-          <li>Human-in-the-loop multimodal agent systems</li>
-          <li>Generative modeling of experience and trajectories</li>
-        </ul>
-      </div>
-
-      <div class="topic-card">
-        <div class="topic-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-        </div>
-        <h3>Data, Benchmarks, and Evaluation</h3>
-        <ul>
-          <li>Benchmarks for agentic multimodal intelligence</li>
-          <li>Interactive datasets and simulation environments</li>
-          <li>Long-horizon and multi-step evaluation protocols</li>
-          <li>Evaluation of agents' behaviors and long-term outcomes</li>
-          <li>Failure analysis and diagnostic evaluation</li>
-        </ul>
-      </div>
-
-      <div class="topic-card">
-        <div class="topic-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        </div>
-        <h3>Trustworthy and Responsible Multimodal Agents</h3>
-        <ul>
-          <li>Safety, robustness, and alignment in agentic systems</li>
-          <li>Interpretability and transparency of agent decisions</li>
-          <li>Bias, fairness, and ethical considerations</li>
-          <li>Reliability and controllability of generative agent behaviors</li>
-          <li>Responsible deployment of agents in the real world</li>
+          <li>Work must be <strong>original and not under review</strong> elsewhere</li>
+          <li>Previously published work is not eligible</li>
+          <li>At least one author must register and present at the workshop</li>
+          <li>Accepted papers will appear in the <strong>ACM Digital Library</strong></li>
         </ul>
       </div>
 
     </div>
 
-    <div class="submission-info">
-      <h3>Submission Guidelines</h3>
-      <div class="submission-details">
-        <div class="submission-item">
-          <strong>Format</strong>
-          <span>ACM MM 2026 Workshop paper format</span>
-        </div>
-        <div class="submission-item">
-          <strong>Proceedings</strong>
-          <span>Accepted papers will be published in the ACM Digital Library</span>
-        </div>
-        <div class="submission-item">
-          <strong>Review</strong>
-          <span>Double-blind peer review</span>
-        </div>
-        <div class="submission-item">
-          <strong>Submission Portal</strong>
-          <span>TBD</span>
-        </div>
-      </div>
+    <div class="cfp-submit-box">
+      <h3>Submit Your Paper</h3>
+      <p>Submissions are managed through OpenReview. The submission portal will open once important dates are confirmed.</p>
+      <a href="#" class="btn-submit" aria-disabled="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+        Submit via OpenReview
+      </a>
+      <p class="btn-submit-note">Submission portal opening date will be announced shortly.</p>
     </div>
   </div>
 </section>
 
-<!-- Keynote Speakers -->
-<section id="speakers" class="section">
+<!-- ============================================================ KEYNOTE SPEAKERS -->
+<section id="speakers" class="section section-alt">
   <div class="container">
     <div class="section-header">
       <span class="section-tag">Invited Talks</span>
       <h2 class="section-title">Keynote Speakers</h2>
+      <p style="color:var(--text-muted);font-size:.95rem;margin-top:.5rem;">Speaker lineup to be announced. Stay tuned for updates.</p>
     </div>
     <div class="speakers-grid">
 
-      <div class="speaker-card">
-        <div class="speaker-avatar">HH</div>
+      <div class="speaker-card tbd">
+        <div class="speaker-avatar">TBD</div>
         <div class="speaker-info">
-          <h3>Helen Huang</h3>
-          <p class="speaker-affil">The University of Queensland, Australia</p>
-          <p class="speaker-talk">"Generative Multimodal Agents for Long-horizon Reasoning"</p>
-          <p class="speaker-bio">Professor and ARC Future Fellow at the School of ITEE, The University of Queensland. Her research interests include multimedia indexing and search, and social data analysis. She has published 200+ papers and serves as Associate Editor of VLDB Journal and ACM TOIS.</p>
+          <h3>To Be Announced</h3>
+          <p class="speaker-affil">Affiliation TBD</p>
+          <p class="speaker-talk">Talk title TBD</p>
         </div>
       </div>
 
-      <div class="speaker-card">
-        <div class="speaker-avatar">JL</div>
+      <div class="speaker-card tbd">
+        <div class="speaker-avatar">TBD</div>
         <div class="speaker-info">
-          <h3>Jiebo Luo</h3>
-          <p class="speaker-affil">The University of Rochester, USA</p>
-          <p class="speaker-talk">"Vision-Language-Action Models for Agentic Intelligence"</p>
-          <p class="speaker-bio">Professor at the University of Rochester. His research spans computer vision, NLP, machine learning, and data mining. He has authored nearly 600 technical papers and 90+ U.S. patents. Fellow of ACM, AAAI, IEEE, SPIE, and IAPR.</p>
+          <h3>To Be Announced</h3>
+          <p class="speaker-affil">Affiliation TBD</p>
+          <p class="speaker-talk">Talk title TBD</p>
         </div>
       </div>
 
-      <div class="speaker-card">
-        <div class="speaker-avatar">JC</div>
+      <div class="speaker-card tbd">
+        <div class="speaker-avatar">TBD</div>
         <div class="speaker-info">
-          <h3>Jianfei Cai</h3>
-          <p class="speaker-affil">Monash University, Australia</p>
-          <p class="speaker-talk">"World Models and Multimodal Planning for Interactive Agents"</p>
-          <p class="speaker-bio">Professor at the Faculty of IT, Monash University. His research interests include computer vision, multimedia, and visual computing. He has published 300+ technical papers and is General Chair for ACM Multimedia 2024. Fellow of IEEE.</p>
+          <h3>To Be Announced</h3>
+          <p class="speaker-affil">Affiliation TBD</p>
+          <p class="speaker-talk">Talk title TBD</p>
         </div>
       </div>
 
-      <div class="speaker-card">
-        <div class="speaker-avatar">NS</div>
+      <div class="speaker-card tbd">
+        <div class="speaker-avatar">TBD</div>
         <div class="speaker-info">
-          <h3>Nicu Sebe</h3>
-          <p class="speaker-affil">The University of Trento, Italy</p>
-          <p class="speaker-talk">"Multimodal Perception and Reasoning in Open World"</p>
-          <p class="speaker-bio">Professor at the University of Trento, leading research in multimedia information retrieval and human behavior understanding. General Co-Chair of ACM Multimedia 2013, and Program Chair of ACM Multimedia 2007, 2011, ECCV 2016, and ICCV 2017.</p>
+          <h3>To Be Announced</h3>
+          <p class="speaker-affil">Affiliation TBD</p>
+          <p class="speaker-talk">Talk title TBD</p>
         </div>
       </div>
 
@@ -277,8 +379,8 @@
   </div>
 </section>
 
-<!-- Schedule -->
-<section id="schedule" class="section section-alt">
+<!-- ============================================================ SCHEDULE -->
+<section id="schedule" class="section">
   <div class="container">
     <div class="section-header">
       <span class="section-tag">Program</span>
@@ -307,16 +409,16 @@
             <td>—</td>
           </tr>
           <tr>
-            <td>Generative Multimodal Agents for Long-horizon Reasoning</td>
+            <td>Keynote Talk 1</td>
             <td>30 min</td>
-            <td>Helen Huang</td>
-            <td>The University of Queensland</td>
+            <td>TBD</td>
+            <td>TBD</td>
           </tr>
           <tr>
-            <td>Vision-Language-Action Models for Agentic Intelligence</td>
+            <td>Keynote Talk 2</td>
             <td>30 min</td>
-            <td>Jiebo Luo</td>
-            <td>The University of Rochester</td>
+            <td>TBD</td>
+            <td>TBD</td>
           </tr>
           <tr class="schedule-break">
             <td><em>Coffee Break</em></td>
@@ -331,16 +433,16 @@
             <td>—</td>
           </tr>
           <tr>
-            <td>World Models and Multimodal Planning for Interactive Agents</td>
+            <td>Keynote Talk 3</td>
             <td>30 min</td>
-            <td>Jianfei Cai</td>
-            <td>Monash University</td>
+            <td>TBD</td>
+            <td>TBD</td>
           </tr>
           <tr>
-            <td>Multimodal Perception and Reasoning in Open World</td>
+            <td>Keynote Talk 4</td>
             <td>30 min</td>
-            <td>Nicu Sebe</td>
-            <td>The University of Trento</td>
+            <td>TBD</td>
+            <td>TBD</td>
           </tr>
           <tr class="schedule-section-header">
             <td colspan="4">Afternoon Session</td>
@@ -357,101 +459,23 @@
   </div>
 </section>
 
-<!-- Organizers -->
-<section id="organizers" class="section">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">Team</span>
-      <h2 class="section-title">Organizers</h2>
-    </div>
-    <div class="organizers-grid">
-
-      <div class="organizer-card">
-        <div class="organizer-avatar">QC</div>
-        <h3>Qi Chen</h3>
-        <p class="organizer-affil">Adelaide University, Australia</p>
-        <a href="mailto:qi.chen04@adelaide.edu.au" class="organizer-email">qi.chen04@adelaide.edu.au</a>
-      </div>
-
-      <div class="organizer-card">
-        <div class="organizer-avatar">JW</div>
-        <h3>Junyan Wang</h3>
-        <p class="organizer-affil">Adelaide University, Australia</p>
-        <a href="mailto:junyan.wang@adelaide.edu.au" class="organizer-email">junyan.wang@adelaide.edu.au</a>
-      </div>
-
-      <div class="organizer-card">
-        <div class="organizer-avatar">YQ</div>
-        <h3>Yuankai Qi</h3>
-        <p class="organizer-affil">Macquarie University, Australia</p>
-        <a href="mailto:qykshr@gmail.com" class="organizer-email">qykshr@gmail.com</a>
-      </div>
-
-      <div class="organizer-card">
-        <div class="organizer-avatar">JD</div>
-        <h3>Jiajun Deng</h3>
-        <p class="organizer-affil">USTC, China</p>
-        <a href="mailto:dengjj@ustc.edu.cn" class="organizer-email">dengjj@ustc.edu.cn</a>
-      </div>
-
-      <div class="organizer-card">
-        <div class="organizer-avatar">HL</div>
-        <h3>Hao Li</h3>
-        <p class="organizer-affil">Fudan University, China</p>
-        <a href="mailto:lihao_lh@fudan.edu.cn" class="organizer-email">lihao_lh@fudan.edu.cn</a>
-      </div>
-
-      <div class="organizer-card">
-        <div class="organizer-avatar">MT</div>
-        <h3>Mingkui Tan</h3>
-        <p class="organizer-affil">SCUT, China</p>
-        <a href="mailto:mingkuitan@scut.edu.cn" class="organizer-email">mingkuitan@scut.edu.cn</a>
-      </div>
-
-      <div class="organizer-card">
-        <div class="organizer-avatar">HL</div>
-        <h3>Houqiang Li</h3>
-        <p class="organizer-affil">USTC, China</p>
-        <a href="mailto:lihq@ustc.edu.cn" class="organizer-email">lihq@ustc.edu.cn</a>
-      </div>
-
-      <div class="organizer-card">
-        <div class="organizer-avatar">XC</div>
-        <h3>Xiaojun Chang</h3>
-        <p class="organizer-affil">USTC, China</p>
-        <a href="mailto:xjchang@ustc.edu.cn" class="organizer-email">xjchang@ustc.edu.cn</a>
-      </div>
-
-      <div class="organizer-card">
-        <div class="organizer-avatar">QW</div>
-        <h3>Qi Wu</h3>
-        <p class="organizer-affil">Adelaide University, Australia</p>
-        <a href="mailto:qi.wu01@adelaide.edu.au" class="organizer-email">qi.wu01@adelaide.edu.au</a>
-      </div>
-
-      <div class="organizer-card">
-        <div class="organizer-avatar">AH</div>
-        <h3>Anton van den Hengel</h3>
-        <p class="organizer-affil">Adelaide University, Australia</p>
-        <a href="mailto:anton.vandenhengel@adelaide.edu.au" class="organizer-email">anton.vandenhengel@adelaide.edu.au</a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
+<!-- ============================================================ FOOTER -->
 <footer class="footer">
   <div class="container">
     <div class="footer-content">
       <div class="footer-brand">
-        <div class="footer-logo">AMI 2026</div>
+        <div class="footer-logo"><span class="logo-ami">AMI</span> 2026</div>
         <p>The 1st International Workshop on Agentic Multimodal Intelligence</p>
-        <p>Co-located with ACM Multimedia 2026 · Rio de Janeiro, Brazil</p>
+        <p>Co-located with ACM Multimedia 2026 &nbsp;·&nbsp; Rio de Janeiro, Brazil</p>
       </div>
       <div class="footer-links">
         <a href="https://acmmm2026.org" target="_blank" rel="noopener">ACM MM 2026</a>
-        <a href="mailto:qi.chen04@adelaide.edu.au">Contact</a>
+        <span class="footer-contact">
+          <span class="footer-contact-label">Contact:</span>
+          <a href="mailto:qi.chen04@adelaide.edu.au">qi.chen04@adelaide.edu.au</a>
+          <span class="footer-contact-sep">·</span>
+          <a href="mailto:junyan.wang@adelaide.edu.au">junyan.wang@adelaide.edu.au</a>
+        </span>
       </div>
     </div>
     <div class="footer-bottom">
