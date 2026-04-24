@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AMI Workshop 2026 — Poster</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy:      #0a2353;
+      --navy-dark: #06152e;
+      --red:       #c8102e;
+      --red-light: #ff8fa3;
+      --text:      #1a2133;
+      --text-mute: #5a6a8a;
+      --border:    #dde3ee;
+      --cream:     #f7f5f0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      font-family: 'Inter', system-ui, sans-serif;
+      color: var(--text);
+      background: #fff;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      margin: 0;
+      padding: 0;
+    }
+    .poster {
+      width: 800px;
+      background: #fff;
+      overflow: hidden;
+    }
+    /* Preview-only frame when viewed in browser */
+    body.preview {
+      background: #e5e7ec;
+      padding: 30px 10px;
+    }
+    body.preview .poster {
+      margin: 0 auto;
+      box-shadow: 0 10px 60px rgba(0,0,0,.25);
+    }
+
+    /* ============ HEADER ============ */
+    .poster-header {
+      position: relative;
+      height: 270px;
+      background:
+        linear-gradient(to bottom, rgba(6,21,46,.55), rgba(6,21,46,.85)),
+        url('https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=1600&q=85&fit=crop&auto=format&fm=jpg') center/cover no-repeat;
+      color: #fff;
+      padding: 22px 32px 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .acm-logo {
+      background: #fff;
+      padding: 10px 14px;
+      border-radius: 6px;
+      box-shadow: 0 4px 14px rgba(0,0,0,.18);
+    }
+    .acm-logo img {
+      height: 44px;
+      width: auto;
+      display: block;
+    }
+    .header-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 14px;
+      background: rgba(200,16,46,.2);
+      border: 1px solid rgba(255,143,163,.5);
+      color: var(--red-light);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border-radius: 100px;
+    }
+    .header-badge::before {
+      content: '';
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--red-light);
+    }
+
+    .header-center {
+      text-align: center;
+    }
+    .header-subtitle {
+      font-family: 'Merriweather', serif;
+      font-size: 17px;
+      font-weight: 400;
+      margin-bottom: 4px;
+      color: rgba(255,255,255,.9);
+    }
+    .header-title {
+      font-family: 'Merriweather', serif;
+      font-size: 34px;
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--red-light);
+      margin-bottom: 2px;
+      letter-spacing: -.5px;
+      white-space: nowrap;
+    }
+    .header-meta {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      color: rgba(255,255,255,.85);
+      margin-top: 10px;
+      font-weight: 500;
+      letter-spacing: .5px;
+    }
+    .header-meta .dot { color: var(--red-light); margin: 0 8px; }
+
+    /* ============ SECTION ============ */
+    .section { padding: 20px 32px; }
+    .section-banner {
+      background: var(--navy);
+      color: #fff;
+      padding: 11px 32px;
+      font-family: 'Merriweather', serif;
+      font-size: 19px;
+      font-weight: 700;
+      text-align: center;
+      border-top: 3px solid var(--red);
+      letter-spacing: .5px;
+    }
+
+    .description p {
+      font-size: 13px;
+      line-height: 1.7;
+      color: var(--text);
+      text-align: justify;
+      hyphens: auto;
+    }
+    .description strong { color: var(--navy); font-weight: 700; }
+    .description a-link { color: var(--red); font-weight: 600; }
+
+    /* CFP topics */
+    .topics-list {
+      margin: 2px 0;
+      padding-left: 0;
+      list-style: none;
+    }
+    .topics-list li {
+      font-size: 13px;
+      line-height: 1.9;
+      counter-increment: step;
+      padding-left: 28px;
+      position: relative;
+      color: var(--text);
+    }
+    .topics-list li::before {
+      content: counter(step);
+      position: absolute;
+      left: 0; top: 2px;
+      width: 20px; height: 20px;
+      background: var(--red);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      font-family: 'Inter', sans-serif;
+    }
+    .topics-list { counter-reset: step; }
+    .cfp-intro, .cfp-note {
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--text);
+    }
+    .cfp-intro { margin-bottom: 8px; }
+    .cfp-note  { margin-top: 10px; text-align: justify; }
+    .cfp-note .highlight {
+      color: var(--red);
+      font-weight: 700;
+    }
+
+    /* Dates */
+    .dates {
+      padding: 18px 32px 22px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 40px;
+    }
+    .dates-col { flex: 1; min-width: 260px; }
+    .dates-col ul { list-style: none; }
+    .dates-col ul li {
+      font-size: 13px;
+      padding: 3px 0 3px 16px;
+      position: relative;
+      line-height: 1.7;
+    }
+    .dates-col ul li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: var(--red);
+      font-weight: 800;
+      font-size: 14px;
+    }
+    .dates-col ul li strong {
+      color: var(--navy);
+      font-weight: 700;
+    }
+    .deadline-note {
+      font-size: 12px;
+      color: var(--text-mute);
+      margin-top: 6px;
+      padding-left: 16px;
+    }
+
+    /* Organizers */
+    .organizers-wrap {
+      padding: 22px 28px 32px;
+      background: var(--cream);
+    }
+    .organizers {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 18px 12px;
+    }
+    .org {
+      text-align: center;
+    }
+    .org-photo {
+      width: 92px;
+      height: 92px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      box-shadow: 0 2px 8px rgba(10,35,83,.2);
+      object-fit: cover;
+      margin: 0 auto 8px;
+      display: block;
+      background: var(--navy);
+    }
+    .org-name {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      color: var(--red);
+      margin-bottom: 2px;
+      line-height: 1.2;
+    }
+    .org-affil {
+      font-size: 10.5px;
+      color: var(--text-mute);
+      line-height: 1.3;
+      font-weight: 500;
+    }
+
+    /* Footer strip */
+    .footer-strip {
+      background: var(--navy-dark);
+      color: rgba(255,255,255,.65);
+      padding: 10px 32px;
+      font-size: 11px;
+      display: flex;
+      justify-content: space-between;
+      border-top: 2px solid var(--red);
+    }
+    .footer-strip a { color: var(--red-light); text-decoration: none; font-weight: 600; }
+
+    @media print {
+      body { background: #fff; padding: 0; }
+      .poster { box-shadow: none; margin: 0; }
+    }
+  </style>
+</head>
+<body>
+<script>
+  // Only show preview frame when ?preview=1 is in URL
+  if (location.search.includes('preview')) {
+    document.body.classList.add('preview');
+  }
+</script>
+
+<div class="poster">
+
+  <!-- Header -->
+  <div class="poster-header">
+    <div class="header-top">
+      <div class="acm-logo">
+        <img src="LOGO.png" alt="ACM Multimedia 2026"/>
+      </div>
+      <div class="header-badge">Workshop</div>
+    </div>
+
+    <div class="header-center">
+      <div class="header-subtitle">The 1st International Workshop on</div>
+      <div class="header-title">Agentic Multimodal Intelligence</div>
+      <div class="header-meta">
+        Rio de Janeiro, Brazil
+        <span class="dot">•</span>
+        10–11 November 2026
+      </div>
+    </div>
+  </div>
+
+  <!-- Description -->
+  <div class="section description">
+    <p>
+      Recent advances in multimodal foundation models have significantly reshaped artificial intelligence by enabling unified perception, understanding, and generation across text, images, videos, audio, and other modalities. However, the next frontier of intelligence lies in <strong>agentic AI</strong>&mdash;systems that can autonomously reason, plan, act, and adapt over time in interactive environments. This shift marks a fundamental transition from passive multimodal models to <strong>Agentic Multimodal Intelligence (AMI)</strong>. This workshop brings together researchers across multimedia, vision, NLP, robotics, and HCI to advance models, data, benchmarks, and evaluation for next-generation intelligent agents.
+    </p>
+  </div>
+
+  <!-- Call for Papers -->
+  <div class="section-banner">Call for Papers</div>
+  <div class="section">
+    <p class="cfp-intro">We invite submissions of original research contributions related to, but not limited to, the following topics:</p>
+    <ol class="topics-list">
+      <li>Agentic Multimodal Intelligence &amp; Autonomous Decision-Making</li>
+      <li>Multimodal Reasoning, Planning, and Control</li>
+      <li>Learning from Interaction and Human Feedback</li>
+      <li>Data, Benchmarks, and Evaluation for Multimodal Agents</li>
+      <li>Trustworthy and Responsible Multimodal Agents</li>
+    </ol>
+    <p class="cfp-note">
+      Papers follow the ACM MM 2026 format (4&ndash;8 pages + up to 2 reference pages), are reviewed double-blind, and will be archived in the <span class="highlight">ACM Digital Library</span>. Submit via <span class="highlight">OpenReview</span>.
+    </p>
+  </div>
+
+  <!-- Important Dates -->
+  <div class="section-banner">Important Dates</div>
+  <div class="dates">
+    <div class="dates-col">
+      <ul>
+        <li><strong>Paper Submission:</strong> 16 July 2026</li>
+        <li><strong>Author Notification:</strong> 6 August 2026</li>
+      </ul>
+    </div>
+    <div class="dates-col">
+      <ul>
+        <li><strong>Camera-ready:</strong> 20 August 2026</li>
+        <li><strong>Workshop Date:</strong> 10–11 November 2026</li>
+      </ul>
+      <div class="deadline-note">All deadlines are AoE.</div>
+    </div>
+  </div>
+
+  <!-- Organizers -->
+  <div class="section-banner">Organizers</div>
+  <div class="organizers-wrap">
+    <div class="organizers">
+
+      <div class="org">
+        <img class="org-photo" src="photo/qichen.jpg" alt="Qi Chen"/>
+        <div class="org-name">Qi Chen</div>
+        <div class="org-affil">Adelaide University</div>
+      </div>
+
+      <div class="org">
+        <img class="org-photo" src="photo/junyanwang.jpg" alt="Junyan Wang"/>
+        <div class="org-name">Junyan Wang</div>
+        <div class="org-affil">Adelaide University</div>
+      </div>
+
+      <div class="org">
+        <img class="org-photo" src="photo/yuankaiqi.png" alt="Yuankai Qi"/>
+        <div class="org-name">Yuankai Qi</div>
+        <div class="org-affil">Macquarie University</div>
+      </div>
+
+      <div class="org">
+        <img class="org-photo" src="photo/jiajundeng.jpeg" alt="Jiajun Deng"/>
+        <div class="org-name">Jiajun Deng</div>
+        <div class="org-affil">USTC</div>
+      </div>
+
+      <div class="org">
+        <img class="org-photo" src="photo/haoli.jpg" alt="Hao Li"/>
+        <div class="org-name">Hao Li</div>
+        <div class="org-affil">Fudan University</div>
+      </div>
+
+      <div class="org">
+        <img class="org-photo" src="photo/mingkuitan.png" alt="Mingkui Tan"/>
+        <div class="org-name">Mingkui Tan</div>
+        <div class="org-affil">SCUT</div>
+      </div>
+
+      <div class="org">
+        <img class="org-photo" src="photo/xiaojunchang.jpg" alt="Xiaojun Chang"/>
+        <div class="org-name">Xiaojun Chang</div>
+        <div class="org-affil">USTC</div>
+      </div>
+
+      <div class="org">
+        <img class="org-photo" src="photo/houqiangli.jpg" alt="Houqiang Li"/>
+        <div class="org-name">Houqiang Li</div>
+        <div class="org-affil">USTC</div>
+      </div>
+
+      <div class="org">
+        <img class="org-photo" src="photo/qiwu.jpeg" alt="Qi Wu"/>
+        <div class="org-name">Qi Wu</div>
+        <div class="org-affil">Adelaide University</div>
+      </div>
+
+      <div class="org">
+        <img class="org-photo" src="photo/anton.jpeg" alt="Anton van den Hengel"/>
+        <div class="org-name">Anton van den Hengel</div>
+        <div class="org-affil">Adelaide University</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer-strip">
+    <span>ami-workshop-2026 @ ACM Multimedia 2026</span>
+    <span>Visit: <a>amimm2026.github.io</a></span>
+  </div>
+
+</div>
+
+</body>
+</html>

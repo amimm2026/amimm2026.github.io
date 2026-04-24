@@ -64,12 +64,25 @@ a:hover { color: var(--red); text-decoration: underline; }
   height: 62px;
 }
 .nav-logo {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
   font-family: 'Inter', sans-serif;
   font-weight: 800;
   font-size: .95rem;
   color: #fff;
   letter-spacing: .03em;
   white-space: nowrap;
+}
+.nav-acm-logo {
+  height: 34px;
+  width: auto;
+  display: block;
+  filter: brightness(1.15);
+}
+.nav-divider {
+  color: rgba(255,255,255,.25);
+  font-weight: 300;
 }
 .nav-logo .logo-ami { color: var(--red); }
 .nav-links {
@@ -368,7 +381,7 @@ a:hover { color: var(--red); text-decoration: underline; }
   gap: 3.5rem;
   align-items: start;
 }
-.about-text p { color: var(--text); }
+.about-text p { color: var(--text); text-align: justify; hyphens: auto; }
 .about-text strong { color: var(--navy); }
 .about-questions h3 {
   font-size: .82rem;
