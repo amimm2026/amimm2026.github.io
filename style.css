@@ -568,6 +568,21 @@ a:hover { color: var(--red); text-decoration: underline; }
   color: var(--red);
   font-weight: 700;
 }
+.cfp-award-note {
+  margin: 0 auto 2rem;
+  font-size: .95rem;
+  color: var(--text);
+  line-height: 1.65;
+  padding: 1.1rem 1.5rem;
+  background: #fff8f5;
+  border: 1px solid #f5d6dc;
+  border-left: 3px solid var(--red);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.cfp-award-note .award-highlight {
+  color: var(--red);
+  font-weight: 700;
+}
 .cfp-submit-box {
   background: var(--navy);
   border-radius: var(--radius);
