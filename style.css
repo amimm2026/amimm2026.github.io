@@ -714,8 +714,10 @@ a:hover { color: var(--red); text-decoration: underline; }
 /* ============================================================ SPEAKERS */
 .speakers-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+  max-width: 960px;
+  margin: 0 auto;
 }
 .speaker-card {
   display: flex;
@@ -787,7 +789,19 @@ a:hover { color: var(--red); text-decoration: underline; }
   font-weight: 500;
   line-height: 1.4;
 }
+.speaker-time {
+  display: inline-block;
+  font-size: .78rem;
+  font-weight: 600;
+  color: var(--navy);
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: .2rem .75rem;
+  margin-bottom: .75rem;
+}
 .speaker-bio {
+  text-align: justify;
   font-size: .82rem;
   color: var(--text-muted);
   line-height: 1.6;
