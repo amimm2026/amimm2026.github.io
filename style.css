@@ -859,6 +859,23 @@ a:hover { color: var(--red); text-decoration: underline; }
   padding: .6rem 1.25rem;
   border-left: 3px solid var(--red);
 }
+.schedule-table .sch-time {
+  white-space: nowrap;
+  font-weight: 600;
+  color: var(--navy);
+  font-variant-numeric: tabular-nums;
+  width: 1%;
+}
+.schedule-table .sch-session {
+  white-space: nowrap;
+  font-weight: 600;
+  color: var(--red);
+  width: 1%;
+}
+.schedule-table .sch-paper { display: block; font-weight: 600; color: var(--navy); line-height: 1.45; }
+.schedule-table .sch-authors { display: block; font-size: .8rem; color: var(--text-muted); margin-top: .2rem; line-height: 1.5; }
+.schedule-note a { color: var(--red); font-weight: 600; }
+.schedule-award td { background: #fff8f5; }
 .schedule-break td {
   color: var(--text-muted);
   font-style: italic;
